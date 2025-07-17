@@ -29,10 +29,14 @@ function SpellCard({ spell }) {
       <hr className={styles.divider} />
 
       {/* Descripción */}
-      {spell.description && (
-        <p className={styles.description}>{spell.description}</p>
-      )}
-
+      <a
+        href={spell.url}
+        target="_blank"
+        rel="noopener noreferrer"
+          className={styles.url}>
+          Ver más detalles del hechizo
+      </a>
+      
       {/* Info técnica */}
       <div>
         <div className={styles.infoRow}><strong>Action:</strong><span>{spell.action}</span></div>
