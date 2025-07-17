@@ -1018,10 +1018,6 @@
       {
         "dice": "1d6",
         "damageType": "Fire"
-      },
-      {
-        "dice": "1d6",
-        "damageType": "Fire"
       }
     ]
   },
@@ -1639,14 +1635,6 @@
     "range": "18 m / 60 ft",
     "type": "Attack roll",
     "damage": [
-      {
-        "dice": "2d6",
-        "damageType": "Fire"
-      },
-      {
-        "dice": "2d6",
-        "damageType": "Fire"
-      },
       {
         "dice": "2d6",
         "damageType": "Fire"
@@ -2660,10 +2648,6 @@
       {
         "dice": "5d6",
         "damageType": "Thunder"
-      },
-      {
-        "dice": "5d6",
-        "damageType": "Radiant"
       }
     ]
   },
@@ -3071,10 +3055,6 @@
     "range": "18 m /  60ft",
     "type": "DEX save",
     "damage": [
-      {
-        "dice": "10d6",
-        "damageType": "Cold"
-      },
       {
         "dice": "10d6",
         "damageType": "Cold"

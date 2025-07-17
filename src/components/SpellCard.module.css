@@ -48,7 +48,7 @@
   border-top: 1px solid #ccc;
 }
 
-.description,
+.url,
 .infoRow,
 .damageItem {
   font-size: 0.75rem; /* <-- letra más pequeña para TODA la sección inferior */
@@ -67,5 +67,5 @@
 }
 
 .damageItem {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
 }
