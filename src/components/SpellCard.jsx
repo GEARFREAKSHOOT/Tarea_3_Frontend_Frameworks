@@ -49,21 +49,19 @@ function SpellCard({ spell }) {
       {spell.damage && spell.damage.length > 0 && (
         <div className={styles.infoRow} style={{ alignItems: 'flex-start' }}>
           <strong>Damage:</strong>
-          <ul style={{ listStyle: 'none', padding: 0, marginTop: '0.5rem' }}>
-            {[...new Map(
-              spell.damage.map(dmg => [JSON.stringify(dmg), dmg])
-                ).values()].map((dmg, index) => (
-                <li key={index} className={styles.damageItem}>
-                  <div><strong>dice:</strong> {dmg.dice}</div>
-                  <div><strong>type:</strong> {dmg.damageType}</div>
-                  {dmg.weapon && <div><strong>weapon:</strong> yes</div>}
-                </li>
-              ))}
-            </ul>
+          <div>
+            {spell.damage.map((dmg, index) => (
+              <div key={index} className={styles.damageItem}>
+                <div><strong>dice:</strong> {dmg.dice}</div>
+                <div><strong>type:</strong> {dmg.damageType}</div>
+                {dmg.weapon && <div><strong>weapon:</strong> yes</div>}
+              </div>
+            ))}
           </div>
-        )}
-      </div>
-    );
-  }
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default SpellCard;
