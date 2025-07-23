@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import SpellList from './components/SpellList';
 import ClassSelector from './components/ClassSelector';
-import './App.css'; // asegúrate de que esté importado
+import './App.css';
 
 function App() {
   const [selectedClass, setSelectedClass] = useState('');
@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="app-container">
       <div className="header">
-        <h1>Hechizos por Clase</h1>
+        <h1>Hechizos Clasificados</h1>
         <div className="selector-wrapper">
           <ClassSelector onClassSelect={setSelectedClass} />
         </div>
