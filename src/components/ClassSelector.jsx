@@ -12,13 +12,13 @@ function ClassSelector({ onClassSelect }) {
 
   return (
     <div style={{ marginBottom: '1rem' }}>
-      <label htmlFor="class-select"><strong>Selecciona una clase:</strong></label>
+      <label htmlFor="class-select"><strong>Selecciona un tipo de hechizo:</strong></label>
       <select
         id="class-select"
         onChange={(e) => onClassSelect(e.target.value)}
         style={{ marginLeft: '1rem', padding: '0.5rem' }}
       >
-        <option value="">-- Selecciona una clase --</option>
+        <option value="">-- Selecciona un tipo de hechizo --</option>
         {classes.map((cls) => (
           <option key={cls} value={cls}>{cls.charAt(0).toUpperCase() + cls.slice(1)}</option>
         ))}

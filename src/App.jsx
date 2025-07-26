@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="app-container">
       <div className="header">
-        <h1>Hechizos Clasificados</h1>
+        <h1>Clasificación de hechizos</h1>
         <div className="selector-wrapper">
           <ClassSelector onClassSelect={setSelectedClass} />
         </div>
